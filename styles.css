@@ -1,0 +1,128 @@
+body {
+    background-color: #DEDEDE;
+}
+
+container {
+    display: flex;
+}
+
+.shuffle-sort-section {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 120px 120px 120px;
+}
+
+.header-sec {
+    width: 43%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box {
+    flex: 33.3333%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.button {
+    background-color: #2B8EAD;
+    border-radius: 9px;
+    width: 200px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.d-in-block {
+    display: inline-block;
+}
+
+.d-block {
+    display: block
+}
+
+.d-flex {
+    display: flex;
+}
+
+.button-section {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#shuffleBtn {
+    margin-bottom: 20px;
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    ;
+    margin-top: 15px;
+}
+
+/* for mobile resolution */
+
+@media(max-width: 768px) {
+    .shuffle-sort-section {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto;
+        margin-bottom: 10px;
+    }
+    .shuffle-sort {
+        order: 2
+    }
+    #shuffleBtn {
+        margin-bottom: 4px;
+    }
+    .buttons {
+        order: 1
+    }
+    .main-container {
+        flex-direction: column;
+    }
+    .button-section {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .box {
+        background-color: #DEDEDE!important;
+        margin-bottom: 10px;
+        height: 50px;
+        color: black!important;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    body {
+        background-color: white;
+    }
+    .button {
+        width: 150px;
+    }
+    .header-sec {
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+    .credits {
+        width: 100%;
+    }
+}
